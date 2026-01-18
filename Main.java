@@ -1,17 +1,23 @@
+// Student class
 class Student {
     String name;
     int age;
+
+    void display() {
+        System.out.println("Name: " + name);
+        System.out.println("Age : " + age);
+    }
 }
 
+// Main class
 public class Main {
     public static void main(String[] args) {
 
-        Student s1 = new Student();
+        Student s1 = new Student();   // object created
 
-        s1.name = "Ganesh";
-        s1.age = 20;
+        s1.name = "Gnaneshwar";
+        s1.age = 21;
 
-        System.out.println(s1.name);
-        System.out.println(s1.age);
+        s1.display();   // method call
     }
 }
